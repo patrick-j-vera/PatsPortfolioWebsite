@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-warm-white: #E8DFD0;
+  --color-warm-sand: #FFF8EE;
+  --color-warm-surface: #FFF3E0;
+  --color-honey: #D4940A;
+  --color-honey-light: #F0B429;
+  --color-honey-subtle: #FEF3C6;
+  --color-bark: #3D2C1E;
+  --color-bark-light: #6B5744;
+  --color-bark-muted: #9C8468;
+  --color-sand-border: #E8D5BD;
+
+  --font-serif: var(--font-playfair-display);
+  --font-sans: var(--font-source-sans-3);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-warm-white);
+  color: var(--color-bark);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: var(--color-honey-subtle);
+  color: var(--color-bark);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-honey);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-warm-sand);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bark-muted);
+}
