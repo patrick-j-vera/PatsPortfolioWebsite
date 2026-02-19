@@ -5,7 +5,6 @@ import Hero from "@/components/sections/Hero";
 import MyStory from "@/components/sections/MyStory";
 import Impact from "@/components/sections/Impact";
 import Initiatives from "@/components/sections/Initiatives";
-import Contributions from "@/components/sections/Contributions";
 import Connect from "@/components/sections/Connect";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
         <MyStory />
         <Impact />
         <Initiatives />
-        <Contributions />
         <Connect />
       </main>
 

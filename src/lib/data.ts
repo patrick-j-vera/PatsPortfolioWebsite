@@ -30,6 +30,23 @@ export const myStoryData = {
 
 export const experiencesData: OrganizationExperience[] = [
   {
+    organization: "Easier HOA Management",
+    url: "",
+    roles: [
+      {
+        title: "General Manager/Community Managing Agent",
+        range: "May 2024 - Present",
+        points: [
+          "Managed annual community budget of $200k, ensuring financial health and sustainability",
+          "Migrated homeowners to an online platform, improving payment collection rates by 8% and reducing administrative overhead",
+          "Performed financial audits and recovered $100k in delinquent payments through persistent outreach and payment plans",
+          "Served as a point of contact for homeowners, state/municipal authorities, and vendors, creating a paper trail and ensuring compliance with state laws and community covenants",
+          "Actively engaged with insurance and HOA attorneys to resolve claims and legal issues, protecting the community's interests and assets",
+        ],
+      },
+    ],
+  },
+  {
     organization: "Bloomberg L.P.",
     url: "https://www.bloomberg.com/",
     roles: [
@@ -130,52 +147,6 @@ export const featuredProjectsData: FeaturedProject[] = [
     tech: ["TypeScript", "React", "Firebase", "Tailwind CSS"],
     github: "https://github.com",
     image: "/images/project-placeholder.svg",
-  },
-];
-
-export const projectsData: Project[] = [
-  {
-    title: "Open Source Accessibility Toolkit",
-    description:
-      "A collection of React components and utilities designed to make web accessibility easier for developers.",
-    tech: ["React", "TypeScript", "Jest", "Storybook"],
-    github: "https://github.com",
-  },
-  {
-    title: "Neighborhood Watch App",
-    description:
-      "A mobile-friendly web app for community safety reporting and neighborhood coordination.",
-    tech: ["React Native", "Firebase", "Google Maps API"],
-    github: "https://github.com",
-    external: "https://example.com",
-  },
-  {
-    title: "Food Rescue Coordinator",
-    description:
-      "A logistics tool connecting restaurants with surplus food to local shelters and food banks.",
-    tech: ["Vue.js", "Express", "MongoDB", "Twilio"],
-    github: "https://github.com",
-  },
-  {
-    title: "Study Buddy Finder",
-    description:
-      "A peer-to-peer learning platform matching students by subject, schedule, and learning style.",
-    tech: ["Next.js", "Prisma", "PostgreSQL", "NextAuth"],
-    github: "https://github.com",
-  },
-  {
-    title: "Donation Tracker",
-    description:
-      "A personal finance tool for tracking charitable donations with tax reporting and impact summaries.",
-    tech: ["React", "Chart.js", "Node.js", "Stripe"],
-    github: "https://github.com",
-  },
-  {
-    title: "Volunteer Hour Logger",
-    description:
-      "A simple, elegant tool for volunteers to log hours, generate reports, and share their impact stories.",
-    tech: ["Svelte", "Supabase", "Tailwind CSS"],
-    github: "https://github.com",
   },
 ];
 
