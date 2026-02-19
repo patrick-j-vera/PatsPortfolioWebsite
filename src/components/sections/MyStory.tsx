@@ -39,10 +39,10 @@ export default function MyStory() {
               <div className="absolute inset-0 border-2 border-honey rounded-lg translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
               <div className="relative w-full h-full rounded-lg overflow-hidden bg-warm-surface">
                 <Image
-                  src="/images/profile-placeholder.svg"
+                  src="/images/patricks-profile-placeholder.jpeg"
                   alt="Patrick Vera"
                   fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  className="object-cover object-[43%_center] grayscale hover:grayscale-0 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-honey/10 hover:bg-transparent transition-colors duration-300" />
               </div>

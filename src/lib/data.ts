@@ -4,7 +4,7 @@ export const heroData = {
   greeting: "Hi there, I'm",
   name: "Patrick Vera.",
   tagline: "Here's how I made it better.",
-  bio: "I'm a passionate builder and problem solver who strives to create meaningful impact through technology, community engagement, and thoughtful leadership. Every project is an opportunity to leave things better than I found them.",
+  bio: "Every interaction is an opportunity to leave things better than I found them. This applies to my work in technology and my responsibilities to my family and community. Lifting where you stand is my way of making the world just a little better. ",
   cta: "Explore My Journey",
 };
 
