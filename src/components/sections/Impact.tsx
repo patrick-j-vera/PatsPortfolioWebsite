@@ -12,7 +12,7 @@ export default function Impact() {
   return (
     <section
       id="impact"
-      className="py-24 px-6 md:px-12 lg:px-24 max-w-3xl mx-auto"
+      className="py-24 px-6 md:px-12 lg:px-24 max-w-5xl mx-auto"
     >
       <ScrollReveal>
         <SectionHeading number="02" title="Impact" />
@@ -63,8 +63,7 @@ export default function Impact() {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.25 }}
               >
-                <h3 className="text-lg font-sans font-semibold text-bark">
-                  {experiencesData[activeTab].title}{" "}
+                <h3 className="text-lg font-sans font-semibold mb-6">
                   <a
                     href={experiencesData[activeTab].url}
                     className="text-honey hover:underline"
@@ -75,18 +74,26 @@ export default function Impact() {
                   </a>
                 </h3>
 
-                <p className="font-mono text-sm text-bark-muted mt-1 mb-6">
-                  {experiencesData[activeTab].range}
-                </p>
+                {experiencesData[activeTab].roles.map((role, ri) => (
+                  <div key={ri} className={ri > 0 ? "mt-8" : ""}>
+                    <h4 className="text-lg font-sans font-semibold text-bark">
+                      {role.title}
+                    </h4>
 
-                <ul className="space-y-3">
-                  {experiencesData[activeTab].points.map((point, i) => (
-                    <li key={i} className="flex gap-3 text-bark-light text-sm leading-relaxed">
-                      <span className="text-honey mt-1.5 shrink-0">&#9656;</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                    <p className="font-mono text-sm text-bark-muted mt-1 mb-6">
+                      {role.range}
+                    </p>
+
+                    <ul className="space-y-3">
+                      {role.points.map((point, pi) => (
+                        <li key={pi} className="flex gap-3 text-bark-light text-sm leading-relaxed">
+                          <span className="text-honey mt-1.5 shrink-0">&#9656;</span>
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </motion.div>
             </AnimatePresence>
           </div>

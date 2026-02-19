@@ -49,7 +49,9 @@ export default function Nav() {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.3,
-                delay: shouldReduceMotion ? 0 : ANIMATION.delayChildren + i * 0.1,
+                delay: shouldReduceMotion
+                  ? 0
+                  : ANIMATION.delayChildren + i * 0.1,
               }}
             >
               <span className="font-mono text-honey text-xs mr-1">
@@ -58,20 +60,6 @@ export default function Nav() {
               {link.name}
             </motion.a>
           ))}
-          <motion.a
-            href="/resume.pdf"
-            className="border border-honey text-honey px-4 py-2 rounded text-sm font-mono hover:bg-honey-subtle transition-colors"
-            initial={shouldReduceMotion ? {} : { opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.3,
-              delay: shouldReduceMotion
-                ? 0
-                : ANIMATION.delayChildren + navLinks.length * 0.1,
-            }}
-          >
-            Resume
-          </motion.a>
         </nav>
 
         <motion.button

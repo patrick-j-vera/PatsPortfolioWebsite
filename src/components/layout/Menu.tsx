@@ -53,12 +53,6 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             </a>
           ))}
         </nav>
-        <a
-          href="/resume.pdf"
-          className="border border-honey text-honey px-8 py-3 rounded font-mono text-sm hover:bg-honey-subtle transition-colors"
-        >
-          Resume
-        </a>
       </aside>
     </>
   );

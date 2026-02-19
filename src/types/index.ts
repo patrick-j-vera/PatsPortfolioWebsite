@@ -10,12 +10,16 @@ export interface SocialLink {
   icon: string;
 }
 
-export interface Experience {
+export interface Role {
   title: string;
-  organization: string;
-  url: string;
   range: string;
   points: string[];
+}
+
+export interface OrganizationExperience {
+  organization: string;
+  url: string;
+  roles: Role[];
 }
 
 export interface FeaturedProject {

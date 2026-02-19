@@ -1,18 +1,18 @@
-import { Experience, FeaturedProject, Project } from "@/types";
+import { FeaturedProject, OrganizationExperience, Project } from "@/types";
 
 export const heroData = {
   greeting: "Hi there, I'm",
   name: "Patrick Vera.",
   tagline: "Here's how I made it better.",
-  bio: "Every interaction is an opportunity to leave things better than I found them. This applies to my work in technology and my responsibilities to my family and community. Lifting where you stand is my way of making the world just a little better. ",
-  cta: "Explore My Journey",
+  bio: "Every interaction is an opportunity to leave things better than it was found. My story shows how I've lifted those around me through technology, leadership, and community impact.",
+  cta: "Learn My Story",
 };
 
 export const myStoryData = {
   paragraphs: [
-    "I've always been drawn to the intersection of technology and human impact. Whether it's building software that solves real problems or volunteering in my community, I believe that the most rewarding work comes from giving more than you receive.",
-    "My journey has taken me through various roles where I've had the chance to lead teams, build products, and create initiatives that make a difference. I'm driven by curiosity, fueled by collaboration, and grounded in the belief that we can always do better.",
-    "When I'm not working, you can find me exploring new technologies, mentoring aspiring developers, or looking for the next opportunity to contribute to something bigger than myself.",
+    "I am passionate about connecting people with technology. My journey gives me experience in customer service, sales, team management, UX design, and full-stack engineering. This unique perspective allows me to coordinate seamlessly with my peers.",
+    "My focus continues to be on how to use technology to make people’s lives better. I am an experienced full-stack developer with an emphasis on accessible UX design. I am thrilled when the design makes an experience easy for people of all generations to use.",
+    "Beyond coding, I enjoy developing people and communities. I have a knack for troubleshooting client issues, for automating business tasks, and for building diverse consensus.",
   ],
   skills: [
     "JavaScript (ES6+)",
@@ -21,46 +21,85 @@ export const myStoryData = {
     "Next.js",
     "Node.js",
     "Python",
-    "Tailwind CSS",
     "PostgreSQL",
+    "Kafka",
+    "Neon",
+    "Vercel",
   ],
 };
 
-export const experiencesData: Experience[] = [
+export const experiencesData: OrganizationExperience[] = [
   {
-    title: "Software Engineer",
-    organization: "Impact Tech Co.",
-    url: "#",
-    range: "Jan 2023 — Present",
-    points: [
-      "Led development of a platform serving 10,000+ users in underserved communities",
-      "Mentored 5 junior developers, helping them grow into confident independent contributors",
-      "Architected scalable microservices infrastructure reducing response times by 40%",
-      "Championed accessibility standards, achieving WCAG 2.1 AA compliance across all products",
+    organization: "Bloomberg L.P.",
+    url: "https://www.bloomberg.com/",
+    roles: [
+      {
+        title: "Software Engineer",
+        range: "June 2019 — December 2025",
+        points: [
+          "Engaged in greenfield initiatives to redesign client workflows unlocking new revenue streams in ETF Primary Markets and Order Management Space",
+          "Implemented and rolled out REST APIs tasked with ingesting ~$300M in daily portfolio data volume",
+          "Designed internal tools to streamline client data feed access, reducing operational complexity and enabling handoff from engineers to the implementation team, freeing ~4% of engineering capacity",
+          "Built a curriculum for non-technical staff to move to technical roles that was adopted by HR, resulting in 8+ internal promotions to engineering roles",
+        ],
+      },
+      {
+        title: "Acquisitions and Integration Specialist",
+        range: "Feb 2018 — June 2019",
+        points: [
+          "Served as a technical consultant on a high stake $800M acquisition, diagnosing and explaining market value and price discrepancies between portfolio systems",
+          "Presented findings to senior stakeholders, influencing engineering and product decisions",
+          "Reconciled $250M+ in valuation discrepancies through personally developed technical solutions",
+        ],
+      },
+      {
+        title: "Product Experience Lead",
+        range: "May 2015 — Feb 2018",
+        points: [
+          "Led a firm-wide initiative to provide a consistent user experience across 95% of products",
+          "Collaborated with business, engineers, and designers to agree on a 300+ item UX checklist",
+          "Developed new design patterns with the help of UX and engineering counterparts that were successfully adopted in 78% of situations inside 4 months, according to an internal study",
+        ],
+      },
+      {
+        title: "Financial Sales and Analytics Specialist",
+        range: "Aug 2014 — May 2015",
+        points: [
+          "Balanced engaging 4 financial clients at once to resolve issues quickly, while seeking additional opportunities to provide value, all while maintaining a 96%+ client satisfaction rating",
+          "Specialized in broad equity and fixed income products, serving as a technical consultant for my team",
+        ],
+      },
     ],
   },
   {
-    title: "Full Stack Developer",
-    organization: "Community Solutions Inc.",
-    url: "#",
-    range: "Jun 2021 — Dec 2022",
-    points: [
-      "Built a volunteer management system connecting 500+ volunteers with local organizations",
-      "Implemented real-time notification system improving volunteer response times by 60%",
-      "Collaborated with nonprofit partners to translate complex needs into elegant technical solutions",
-      "Introduced automated testing practices, increasing code coverage from 30% to 85%",
+    organization: "Idaho White Glove LLC",
+    url: "https://www.idahowhiteglove.com/",
+    roles: [
+      {
+        title: "General Manager",
+        range: "Aug 2020 — May 2021",
+        points: [
+          "Managed a team of 60+ employees across 5+ locations to coordinate end of term apartment cleaning for students",
+          "Hired, trained, and organized teams to provide a high quality service, while maintaining a 4.9/5 average customer rating",
+          "Through reputation and sales efforts, new business contracts were added growing annual revenue by 11%",
+        ],
+      },
     ],
   },
   {
-    title: "Junior Developer",
-    organization: "GreenTech Startup",
-    url: "#",
-    range: "Aug 2020 — May 2021",
-    points: [
-      "Developed a carbon footprint tracking dashboard used by 50+ small businesses",
-      "Created data visualization components that made environmental impact data accessible and actionable",
-      "Participated in hackathons focused on sustainability, winning 2 awards for innovative solutions",
-      "Contributed to open-source environmental monitoring tools used by researchers worldwide",
+    organization: "Church of Jesus Christ of Latter-day Saints",
+    url: "https://www.churchofjesuschrist.org/",
+    roles: [
+      {
+        title: "Volunteer in Rosario, Argentina",
+        range: "October 2009 — October 2011",
+        points: [
+          "Provided community service and humanitarian aid to those in Santa Fe, Entre Rios, and Buenos Aires provinces of Argentina",
+          "Responsible for weekly newsletters, passport and visa processing, and coordinating logistics for a team of 50+ volunteers",
+          "Worked with local leaders to organize service projects and community engagement efforts",
+          "Strived to go about doing good",
+        ],
+      },
     ],
   },
 ];
