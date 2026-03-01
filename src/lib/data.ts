@@ -123,21 +123,21 @@ export const experiencesData: OrganizationExperience[] = [
 
 export const featuredProjectsData: FeaturedProject[] = [
   {
-    title: "Community Connect Platform",
+    title: "Stewards HOA - An Open Source HOA Management Platform",
     description:
       "A platform that bridges the gap between volunteers and local organizations in need. Features real-time matching, event coordination, and impact tracking to maximize community benefit.",
     tech: ["React", "Node.js", "PostgreSQL", "Socket.io", "Mapbox"],
     github: "https://github.com",
-    external: "https://example.com",
+    external: "https://stewardshoa.com",
     image: "/images/project-placeholder.svg",
   },
   {
-    title: "EcoTrack Dashboard",
+    title: "Wellness E-commerce Website",
     description:
-      "An interactive dashboard helping small businesses track and reduce their environmental footprint. Provides actionable insights through beautiful data visualizations and personalized recommendations.",
-    tech: ["Next.js", "D3.js", "Python", "FastAPI", "AWS"],
+      "An online spa and wellness store focused on personal growth and self-care. Features a curated product catalog that links to stripe and cal.com.",
+    tech: ["Next.js"],
     github: "https://github.com",
-    external: "https://example.com",
+    external: "https://wellnessbytiara.com",
     image: "/images/project-placeholder.svg",
   },
   {
