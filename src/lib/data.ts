@@ -141,7 +141,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     title: "Holmdel Mews - A community history website",
     description:
-      "A platform that documents and shares the history of the Holmdel Mews community. Features historical archives, interactive maps, and community stories.",
+      "A webapp that documents and shares the history of the Holmdel Mews Community. Features historical archives, interactive maps, and community stories. Access to all the documents is behind provided credentials.",
     tech: ["TypeScript", "React", "Firebase", "Tailwind CSS"],
     image: "/images/project-placeholder.svg",
   },
