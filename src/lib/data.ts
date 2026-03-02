@@ -1,4 +1,4 @@
-import { FeaturedProject, OrganizationExperience, Project } from "@/types";
+import { FeaturedProject, OrganizationExperience } from "@/types";
 
 export const heroData = {
   greeting: "Hi there, I'm",
@@ -10,9 +10,9 @@ export const heroData = {
 
 export const myStoryData = {
   paragraphs: [
-    "I am passionate about connecting people with technology. My journey gives me experience in customer service, sales, team management, UX design, and full-stack engineering. This unique perspective allows me to coordinate seamlessly with my peers.",
-    "My focus continues to be on how to use technology to make people’s lives better. I am an experienced full-stack developer with an emphasis on accessible UX design. I am thrilled when the design makes an experience easy for people of all generations to use.",
-    "Beyond coding, I enjoy developing people and communities. I have a knack for troubleshooting client issues, for automating business tasks, and for building diverse consensus.",
+    "I like seeing the impact of the work I do. More specifically, I like seeing how it helps people. My background spans customer service, sales, team leadership, UX design, and full-stack engineering, giving me a cross-functional perspective that allows me to collaborate effectively across technical and non-technical teams.",
+    "I am a full-stack developer with a strong emphasis on accessible UX design. I care deeply about creating intuitive experiences that work seamlessly for users of all generations and technical ability.",
+    "Beyond engineering, I enjoy developing people and communities. I bring a practical mindset to troubleshooting client challenges, automating business workflows, and building durable consensus across diverse stakeholders.",
   ],
   skills: [
     "JavaScript (ES6+)",
@@ -127,25 +127,22 @@ export const featuredProjectsData: FeaturedProject[] = [
     description:
       "A platform that bridges the gap between volunteers and local organizations in need. Features real-time matching, event coordination, and impact tracking to maximize community benefit.",
     tech: ["React", "Node.js", "PostgreSQL", "Socket.io", "Mapbox"],
-    github: "https://github.com",
-    external: "https://stewardshoa.com",
+    external: "https://stewardshoaplatform.com/",
     image: "/images/project-placeholder.svg",
   },
   {
     title: "Wellness E-commerce Website",
     description:
-      "An online spa and wellness store focused on personal growth and self-care. Features a curated product catalog that links to stripe and cal.com.",
-    tech: ["Next.js"],
-    github: "https://github.com",
+      "An ecommerce yoga and wellness store focused on personal growth and self-care. Features a curated product catalog that links to stripe and cal.com.",
+    tech: ["Next.js", "Tailwind CSS", "Stripe API", "Cal.com API"],
     external: "https://wellnessbytiara.com",
-    image: "/images/project-placeholder.svg",
+    image: "/images/wellness-by-tiara.png",
   },
   {
     title: "MentorMatch",
     description:
       "A mentorship platform connecting experienced professionals with aspiring developers from underrepresented backgrounds. Includes scheduling, progress tracking, and resource sharing.",
     tech: ["TypeScript", "React", "Firebase", "Tailwind CSS"],
-    github: "https://github.com",
     image: "/images/project-placeholder.svg",
   },
 ];
