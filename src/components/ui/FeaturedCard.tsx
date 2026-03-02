@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IconGithub, IconExternal } from "@/components/icons";
+import { IconGithub } from "@/components/icons";
 import type { FeaturedProject } from "@/types";
 
 interface FeaturedCardProps {
@@ -14,16 +14,28 @@ export default function FeaturedCard({ project, index }: FeaturedCardProps) {
     <div className="relative grid grid-cols-12 items-center gap-2 mb-16 last:mb-0">
       {/* Project image */}
       <div
-        className={`col-span-12 md:col-span-7 relative rounded-lg overflow-hidden aspect-video bg-warm-surface ${
+        className={`hidden md:block col-span-12 md:col-span-7 relative rounded-lg overflow-hidden aspect-video bg-warm-surface ${
           isEven ? "md:col-start-1" : "md:col-start-6"
         } row-start-1`}
       >
-        <div className="absolute inset-0 bg-honey/20 hover:bg-transparent transition-colors duration-300 z-10" />
+        {project.external ? (
+          <a
+            href={project.external}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Visit ${project.title}`}
+            className="absolute inset-0 z-10"
+          >
+            <div className="absolute inset-0 bg-honey/20 hover:bg-transparent transition-colors duration-300 cursor-pointer" />
+          </a>
+        ) : (
+          <div className="absolute inset-0 bg-honey/20 hover:bg-transparent transition-colors duration-300 z-10" />
+        )}
         <Image
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
 
@@ -37,7 +49,18 @@ export default function FeaturedCard({ project, index }: FeaturedCardProps) {
       >
         <p className="font-mono text-honey text-sm mb-2">Featured Initiative</p>
         <h3 className="text-2xl font-serif font-bold text-bark mb-4">
-          {project.title}
+          {project.external ? (
+            <a
+              href={project.external}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-honey transition-colors"
+            >
+              {project.title}
+            </a>
+          ) : (
+            project.title
+          )}
         </h3>
 
         <div className="md:bg-warm-surface md:rounded-lg md:p-6 md:shadow-md mb-4">
@@ -56,12 +79,12 @@ export default function FeaturedCard({ project, index }: FeaturedCardProps) {
           ))}
         </ul>
 
-        <div
-          className={`flex gap-4 ${
-            isEven ? "md:justify-end" : "md:justify-start"
-          }`}
-        >
-          {project.github && (
+        {project.github && (
+          <div
+            className={`flex gap-4 ${
+              isEven ? "md:justify-end" : "md:justify-start"
+            }`}
+          >
             <a
               href={project.github}
               target="_blank"
@@ -71,19 +94,8 @@ export default function FeaturedCard({ project, index }: FeaturedCardProps) {
             >
               <IconGithub />
             </a>
-          )}
-          {project.external && (
-            <a
-              href={project.external}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-bark hover:text-honey transition-colors"
-              aria-label={`External link for ${project.title}`}
-            >
-              <IconExternal />
-            </a>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

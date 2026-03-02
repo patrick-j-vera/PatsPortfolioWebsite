@@ -139,9 +139,9 @@ export const featuredProjectsData: FeaturedProject[] = [
     image: "/images/wellness-by-tiara.png",
   },
   {
-    title: "MentorMatch",
+    title: "Holmdel Mews - A community history website",
     description:
-      "A mentorship platform connecting experienced professionals with aspiring developers from underrepresented backgrounds. Includes scheduling, progress tracking, and resource sharing.",
+      "A platform that documents and shares the history of the Holmdel Mews community. Features historical archives, interactive maps, and community stories.",
     tech: ["TypeScript", "React", "Firebase", "Tailwind CSS"],
     image: "/images/project-placeholder.svg",
   },
